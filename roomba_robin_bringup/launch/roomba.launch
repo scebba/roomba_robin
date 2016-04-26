@@ -39,4 +39,7 @@
     <param name="yaml_cfg_file" value="$(find turtlebot_bringup)/param/mux.yaml"/>
     <remap from="cmd_vel_mux/output" to="mobile_base/commands/velocity"/>
   </node>
+
+
+ <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" />
 </launch>
